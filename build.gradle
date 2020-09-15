@@ -18,6 +18,10 @@ allprojects {
     repositories {
         google()
         jcenter()
+
+        maven {
+            url 'https://mvn.jwplayer.com/content/repositories/releases/'
+        }
     }
 }
 
