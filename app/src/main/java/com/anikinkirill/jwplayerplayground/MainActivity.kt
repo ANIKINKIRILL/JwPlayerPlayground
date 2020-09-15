@@ -27,7 +27,12 @@ class MainActivity : AppCompatActivity() {
             .offset("pre")
             .build()
 
-        adSchedule.add(adBreak)
+        val adBreak2 = AdBreak.Builder()
+            .tag("https://stats.seedr.com/vast?gid=5f46295381da8d14654e9ea3&debug=true")
+            .offset("5")
+            .build()
+
+        adSchedule.add(adBreak2)
 
         val advertising = Advertising(AdSource.VAST, adSchedule)
 
