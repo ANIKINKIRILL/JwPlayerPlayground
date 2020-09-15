@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.longtailvideo.jwplayer.JWPlayerView
 import com.longtailvideo.jwplayer.configuration.PlayerConfig
 import com.longtailvideo.jwplayer.media.ads.AdBreak
+import com.longtailvideo.jwplayer.media.ads.AdRules
 import com.longtailvideo.jwplayer.media.ads.AdSource
 import com.longtailvideo.jwplayer.media.ads.Advertising
 import com.longtailvideo.jwplayer.media.playlists.PlaylistItem
@@ -22,12 +23,18 @@ class MainActivity : AppCompatActivity() {
 
         val adSchedule = ArrayList<AdBreak>()
 
-        val midRollBreak = AdBreak.Builder()
+        val midRollBreak1 = AdBreak.Builder()
             .tag("https://stats.seedr.com/vast?gid=5f46295381da8d14654e9ea3&debug=true")
             .offset("5")
             .build()
 
-        adSchedule.add(midRollBreak)
+        val midRollBreak2 = AdBreak.Builder()
+            .tag("https://stats.seedr.com/vast?gid=5f46295381da8d14654e9ea3&debug=true")
+            .offset("15")
+            .build()
+
+        adSchedule.add(midRollBreak1)
+        adSchedule.add(midRollBreak2)
 
         val advertising = Advertising(AdSource.VAST, adSchedule)
 
