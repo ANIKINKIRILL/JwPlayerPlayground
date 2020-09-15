@@ -34,4 +34,14 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+    implementation 'com.longtailvideo.jwplayer:jwplayer-core:3.13.0'
+    implementation 'com.longtailvideo.jwplayer:jwplayer-common:3.13.0'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.10.6'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.10.6'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.10.6'
+    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:2.10.6'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.10.6'
+    implementation 'com.google.android.gms:play-services-ads-identifier:16.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
 }
