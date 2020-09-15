@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         jwPlayerView = findViewById(R.id.jwplayer)
 
-        val adSchedule: MutableList<AdBreak> = ArrayList()
+        val adSchedule = ArrayList<AdBreak>()
 
         val adBreak = AdBreak.Builder()
             .tag("https://stats.seedr.com/vast?gid=5f19631355f5cb79633d2c5b&debug=true")
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
                 .file("https://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8")
                 .build()
 
-        val playlist: MutableList<PlaylistItem> = ArrayList()
+        val playlist = ArrayList<PlaylistItem>()
         playlist.add(playlistItem)
         val config = PlayerConfig.Builder()
             .playlist(playlist)
