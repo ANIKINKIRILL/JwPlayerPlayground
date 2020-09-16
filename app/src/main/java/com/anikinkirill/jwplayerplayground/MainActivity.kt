@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         val advertising = Advertising(AdSource.VAST, adSchedule)
 
         val playlistItem = PlaylistItem.Builder()
-                .file("https://playertest.longtailvideo.com/adaptive/bipbop/gear4/prog_index.m3u8")
+                .file("https://tv-topshop.netrack.ru/hls/topshop.m3u8")
                 .build()
 
         val playlist = ArrayList<PlaylistItem>()
