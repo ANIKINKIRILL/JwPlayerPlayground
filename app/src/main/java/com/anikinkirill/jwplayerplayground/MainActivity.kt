@@ -24,12 +24,12 @@ class MainActivity : AppCompatActivity() {
         val adSchedule = ArrayList<AdBreak>()
 
         val midRollBreak1 = AdBreak.Builder()
-            .tag("https://stats.seedr.com/vast?gid=5f46295381da8d14654e9ea3&debug=true")
+            .tag("https://ad.adriver.ru/cgi-bin/rle.cgi?sid=216288&bt=61&pz=0&target=blank&tuid=1&rnd=1484434468")
             .offset("5")
             .build()
 
         val midRollBreak2 = AdBreak.Builder()
-            .tag("https://stats.seedr.com/vast?gid=5f46295381da8d14654e9ea3&debug=true")
+            .tag("https://ad.adriver.ru/cgi-bin/rle.cgi?sid=216288&bt=61&pz=0&target=blank&tuid=1&rnd=1484434468")
             .offset("15")
             .build()
 
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         val advertising = Advertising(AdSource.VAST, adSchedule)
 
         val playlistItem = PlaylistItem.Builder()
-                .file("https://tv-topshop.netrack.ru/hls/topshop.m3u8")
+                .file("https://cdn.jwplayer.com/manifests/{MEDIA_ID}.m3u8")
                 .build()
 
         val playlist = ArrayList<PlaylistItem>()
